@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/413887eae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Styles/style.css">
+    <title>Ravi Kumar | Front-End Developer</title>
+</head>
+<body>
+    <!-- Header Section -->
+  <header class="header">
+    <div class="logo">RK</div>
+    <nav>
+      <ul id="nav-links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Ravi Kumar Sahoo</h1>
+      <h1><span class="highlight">Front-end Developer</span></h1>
+      <p>Dedicated Front-End Developer with a strong foundation in JavaScript, HTML5, and CSS3. 
+        Known for attention to detail, proactive problem-solving, and a passion for creating visually appealing and user-friendly websites. 
+        I am a quick learner, motivated by the challenge of turning complex ideas into interactive, responsive designs. Currently focused on advancing my skills in the MERN stack, 
+        I’m excited to contribute to projects that make a real impact on users’ digital experiences.
+      </p>
+      <a href="#">View My Work</a>
+      <!-- <button class="btn">View My Work</button> -->
+    </div>
+    <div class="hero-image">
+      <img src="/Images/Ravi Kumar.png" alt="Ravi Kumar Sahoo">
+    </div>
+  </section>
+
+
+  <section id="portfolio" class="portfolio">
+  <h2>Portfolio</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <h3>Project-1</h3>
+      <div class="card-content">
+        <img src="/Images/Shoe Store.png" alt="Shoe Store" class="project-image" />
+        <h3 class="project-title">Shoe Store</h3>
+        <p class="project-description">Working on the functionalities.</p>
+        <a href="#">Live Demo</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <h3>Project-2</h3>
+      <div class="card-content">
+        <img src="/Images/Music Player.png" alt="Music Player" class="project-image" />
+        <h3 class="project-title">Music Player</h3>
+        <p class="project-description">Working on the UI and add more features</p>
+        <a href="#">Live Demo</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <h3>Project-3</h3>
+      <div class="card-content">
+        <img src="/Images/Restaurant App.png" alt="Restaurant App" class="project-image" />
+        <h3 class="project-title">Restaurant App</h3>
+        <p class="project-description">Work in progress not completed yet.</p>
+        <a href="#">Live Demo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skill-bar">
+      <div class="skill html">HTML5</div>
+    </div>
+    <div class="skill-bar">
+      <div class="skill css">CSS3</div>
+    </div>
+    <div class="skill-bar">
+      <div class="skill js">JavaScript</div>
+    </div>
+    <div class="skill-bar">
+      <div class="skill responsive">Responsive</div>
+    </div>
+    <div class="skill-bar ">
+      <div class="skill git">Git</div>
+    </div>
+    <div class="skill-bar">
+      <div class="skill debugging">Debugging & Problem Solving</div>
+    </div>
+    <div class="skill-bar">
+      <div class="skill uiux">Basic UI/UX Knowledge</div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p id="social-link">Follow me on:
+      <a href="https://github.com/Coding-Sharkk" target="_blank">GitHub</a> 
+      <span>|</span>
+      <a href="https://www.linkedin.com/in/ravi-kumar-sahoo-6a6344260/" target="_blank">LinkedIn</a>
+  </p>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="topBtn">Top</button>
+
+  <footer class="footer">
+    <div class="footer-info">
+      <div class="footer-link">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>Rourkela, Odisha-769042, India</p>
+      </div>
+      <div class="footer-link">
+        <i class="fa-solid fa-earth-americas"></i>
+        <a href="">www.yourwebsite.com</a>
+      </div>
+      <div class="footer-link">
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:ravikumarsahoo.902@gmail.com">Ravikumarsahoo.902@gmail.com</a>
+      </div>
+    </div>
+    <p>&copy; All rights reserved by Ravi Kumar Sahoo | 2024</p>
+  </footer>
+
+  <script src="/Scripts/main.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- <section id="portfolio" class="portfolio">
+  <h2>Portfolio</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <div class="card-content">
+        <img src="project1.jpg" alt="Project 1" class="project-image" />
+        <h3 class="project-title">Project 1</h3>
+        <p class="project-description">This is a description for project 1.</p>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="card-content">
+        <img src="project2.jpg" alt="Project 2" class="project-image" />
+        <h3 class="project-title">Project 2</h3>
+        <p class="project-description">This is a description for project 2.</p>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="card-content">
+        <img src="project3.jpg" alt="Project 3" class="project-image" />
+        <h3 class="project-title">Project 3</h3>
+        <p class="project-description">This is a description for project 3.</p>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- /* Project Grid Layout */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Project Card Styling */
+.project-card {
+  background: var(--secondary-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s, max-height 0.5s ease-out;
+  max-height: 250px; /* Set an initial height for the card */
+  overflow: hidden; /* Hide content initially */
+}
+
+/* Card Content */
+.card-content {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Image, Title, and Description */
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Hover Effects */
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  max-height: 500px; /* Expand to show more content */
+}
+
+.project-card:hover .card-content {
+  opacity: 1;
+  visibility: visible;
+} -->

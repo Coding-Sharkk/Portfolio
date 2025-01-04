@@ -1,0 +1,425 @@
+/* Color Palette */
+:root {
+    --bg-color: #1a1a1a; /* Dark background color for consistency */
+    --text-color: #FFFFFF;
+    --primary-color: #e50072; /* Highlight color for important elements */
+    --secondary-color: #690088; /* Dark purple for secondary elements */
+    --accent-color: #ff00ff; /* Bright accent for effects and highlights */
+    --font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply box-sizing to all elements */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    overflow-x: hidden;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+    background-color: var(--bg-color);
+}
+.logo {
+    background: linear-gradient(400deg, var(--primary-color), var(--secondary-color));
+    padding: 4rem;
+    font-size: 49px;
+    font-weight: bold;
+    color: var(--text-color);
+    border-radius: 50%;
+    position: relative;
+    left: -75px;
+    top: -55px;
+}
+
+.header nav ul {
+    display: flex;
+    list-style: none;
+    margin-top: 45px;
+    /* margin-right: -31px; */
+}
+
+.header nav ul li {
+    margin-left: 60px;
+}
+
+.header nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header nav ul li a:hover {
+    color: var(--accent-color);
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 0.3rem;
+  }
+  
+  .hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s;
+  }
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    background-color: var(--bg-color);
+    text-align: left;
+    margin-left: 130px;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+.hero-content p {
+    color: grey;
+}
+.hero h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero .highlight {
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    max-width: 100%; 
+    display: block;  
+} 
+
+.hero img {
+    width: 100%;  
+    
+}
+
+/* Button Styles */
+.hero-content a {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    font-family: var(--font-family);
+    text-decoration: none;
+}
+
+.hero-content a:hover {
+    background-color: #d400d4;   
+}
+
+/* General Section Styling */
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+
+/* Project Grid Layout */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Project Card Styling */
+.project-card {
+  background: var(--primary-color);
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s, max-height 0.5s ease-out;
+  max-height: 70px; 
+  overflow: hidden;
+}
+/* Ensure h3 elements are visible by default */
+.project-card h3 {
+    opacity: 1; /* Keep headings visible */
+    visibility: visible;
+  }
+/* Card Content */
+.card-content {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Image, Title, and Description */
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+.card-content a {
+    padding: 8px 15px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    font-family: var(--font-family);
+    text-decoration: none;
+}
+.card-content a:hover{
+    background-color: #d400d4;
+}
+/* Hover Effects */
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  max-height: 500px;
+  cursor: pointer;
+}
+
+.project-card:hover .card-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Skill Bars */
+.skill-bar {
+    background: var(--secondary-color);
+    border-radius: 5px;
+    margin: 1rem 0;
+    overflow: hidden;
+}
+.skill {
+    background: var(--primary-color);
+    padding: 0.5rem;
+    color: var(--text-color);
+    text-align: left;
+    font-weight: bold;
+    width: 0;
+    transition: width 2s ease;
+}
+/* Widths for Each Skill when Active */
+.html.active { width: 90%; }
+.css.active { width: 85%; }
+.js.active { width: 80%; }
+.responsive.active { width: 85%; }
+.git.active { width: 80%; }
+.debugging.active { width: 75%; }
+.uiux.active { width: 65%; }
+
+/* Contact Form */
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#contact-form input, #contact-form textarea {
+    padding: 0.75rem;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    background: #25294a;
+    color: var(--text-color);
+}
+#contact-form button {
+    background: var(--primary-color);
+    color: var(--text-color);
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+#contact-form button:hover {
+    background: var(--accent-color);
+}
+#social-link a {
+    color: var(--primary-color);
+}
+
+#social-link a:link,
+#social-link a:visited,
+#social-link a:active,
+#social-link a:focus,
+#social-link a:hover {
+  color: var(--primary-color) !important;
+}
+
+#social-link a:hover {
+  color: var(--accent-color) !important;
+}
+
+/* Back to Top Button */
+#topBtn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#topBtn:hover {
+    background-color: #d93d52;
+}
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #272727;
+    color: #fff;
+  }
+  
+
+.footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.footer-info .footer-link{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.footer-info i, .footer-info a, .footer-info p {
+    color: white;
+    text-decoration: none;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+    width: 15px; /* Width of the scrollbar */
+    height: 10px; /* Height of the horizontal scrollbar */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color); /* Scrollbar thumb color */
+    border-radius: 10px; /* Optional: rounded corners */
+    border: 2px solid transparent; /* Optional: adds spacing between the thumb and scrollbar track */
+    background-clip: content-box; /* Optional: creates spacing effect */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f0f0f0; /* Track color (lighter color behind the thumb) */
+    border-radius: 10px; /* Optional: rounded corners for track */
+  }
+  
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+  }
+
+  
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Stack hero content vertically */
+        text-align: center;
+        margin: auto;
+    }
+    .hero-content,
+    .hero-image {
+        max-width: 100%; 
+    }
+    .hamburger {
+        display: flex;
+        margin-top: 1rem;
+      }
+      
+      .header nav ul {
+        display: none; 
+        flex-direction: column;
+        gap: 1rem;
+        position: absolute;
+        /* top: 60px; */
+        right: 0rem;
+        background-color: #333;
+        padding: 1rem;
+        border-radius: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      
+      /* Display the nav menu when .show class is added */
+      nav ul.show {
+        display: flex;
+      }
+}
+
+
+@media (max-width: 340px) {
+    .hero {
+        display: block;
+    }
+    #contact-form input,
+    #contact-form textarea {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+    #contact-form button,
+    h1, h2, h3, p {
+        font-size: 0.8rem;
+    }
+    nav ul {
+        gap: 0.8rem;
+    }
+    .logo {
+        padding: 3rem;
+        font-size: 40px;
+        left: -60px;
+        top: -40px;
+    }
+}
